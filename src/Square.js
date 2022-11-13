@@ -13,24 +13,23 @@ const Kwadrat2 = styled.div`
   background-color:red;
 `
 
-
-
-const Square = () => {const [Size1,SetSize1] = useState(150)
-    const [Size2,SetSize2] = useState(150)
+const STEP =5
+const SIZE =150
+const Square = () => {const [Size1,SetSize1] = useState(SIZE)
+    const [Size2,SetSize2] = useState(SIZE)
     const handleClick1 = ()=>{
     if(Size2>0) {
-        SetSize1(Size1 + 5)
-        SetSize2(Size2 - 5)
+        SetSize1(Size1 + STEP)
+        SetSize2(Size2 - STEP)
     }
 
     }
     const handleClick2 = ()=>{
         if(Size1>0) {
-            SetSize1(Size1 + 5)
-            SetSize2(Size2 - 5)
+            SetSize1(Size1 - STEP)
+            SetSize2(Size2 + STEP)
 
-        SetSize1(Size1-5)
-        SetSize2(Size2+5)
+
     }
     }
 
