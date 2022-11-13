@@ -10,7 +10,7 @@ const HeaderWrapper = () => {
 
     const [underline, setUnderline] = useState(true)
 
-const HandleClick = ()=>{
+const HandleClick = (e)=>{
 
             setUnderline(!underline)
 

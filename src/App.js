@@ -1,14 +1,16 @@
 
 import HeaderWrapper from "./components/HeaderWrapper";
 import HotelsWrapper from "./components/HotelsWrapper";
+import Square from "./Square";
 
 
 
 function App() {
   return (
     <div className="App">
-<HeaderWrapper/>
-        <HotelsWrapper/>
+{/*<HeaderWrapper/>*/}
+{/*        <HotelsWrapper/>*/}
+        <Square/>
     </div>
   );
 }
